@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:cardBackgroundColor="@color/gradientEnd"
+            app:cardCornerRadius="27dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="27dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/story_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/story2" />
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="290dp"
+            android:layout_height="31dp"
+            android:backgroundTint="#1A1920"
+            android:layout_marginLeft="13dp"
+            app:cardCornerRadius="19dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/transparent"
+                android:hint="Search"
+                android:layout_marginLeft="10dp"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Trending"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:backgroundTint="#1A1920"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#Vijay"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tally new movie postrells in fillroll"
+                                    android:textColor="#B1B1B1"
+                                    android:textSize="7dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#Apple"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apple new iphone launch"
+                                    android:textColor="#B1B1B1"
+                                    android:textSize="7dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#Bmw"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bmw new car launch"
+                                    android:textColor="#B1B1B1"
+                                    android:textSize="7dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#Bmw"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bmw new car launch"
+                                    android:textColor="#B1B1B1"
+                                    android:textSize="7dp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#Filroll"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="new update"
+                                    android:textColor="#B1B1B1"
+                                    android:textSize="7dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#Samsung"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="new mobile launch"
+                                    android:textColor="#B1B1B1"
+                                    android:textSize="7dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#Tamilnadu"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#Kerla"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#Bmw"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="10dp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/post_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/search_post1" />
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recycler_view_search"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="308dp"
+                        android:layout_height="166dp"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/search_post2" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_marginLeft="320dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="308dp"
+                            android:layout_height="166dp"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+
+                            android:src="@drawable/search_post3" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="114dp"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/search_post5" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="114dp"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+
+                            android:src="@drawable/search_post6" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="145dp"
+                        android:layout_height="110dp"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/search_post7" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="109dp"
+                            android:background="@color/white"
+                            android:scaleType="centerCrop"
+
+                            android:src="@drawable/search_post4" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

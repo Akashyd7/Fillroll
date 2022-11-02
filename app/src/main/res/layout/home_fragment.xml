@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/gradientEnd"
+                app:cardCornerRadius="27dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="27dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/story_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/story2" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/notification_icon" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/send_icon" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view_story"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@color/black"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="5dp">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_marginLeft="13dp"-->
+<!--                        android:src="@drawable/post_profile" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                        <TextView-->
+<!--                            android:layout_width="170dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:text="Name"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="12sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:text="Location"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="10sp" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="5dp">-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+
+<!--                        android:src="@drawable/post2" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/black">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/heart_icon" />-->
+
+<!--                        <ImageView-->
+<!--                            android:visibility="gone"-->
+<!--                            android:layout_width="20dp"-->
+<!--                            android:layout_height="19dp"-->
+<!--                            android:layout_marginLeft="6dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:src="@drawable/liked_icon" />-->
+<!--                    </RelativeLayout>-->
+
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+
+<!--                        android:src="@drawable/comment_icon" />-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:src="@drawable/view_icon" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:text="680"-->
+<!--                        android:textColor="@color/white" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="right">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginRight="18dp"-->
+<!--                            android:src="@drawable/send_icon" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="27k"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="7dp"-->
+<!--                        android:text="Likes"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:text="200"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="7dp"-->
+<!--                        android:text="Comment"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="This #Christmas,give family welcome to @vijay"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="#Vijay"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@color/black"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="5dp">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_marginLeft="13dp"-->
+<!--                        android:src="@drawable/post_profile" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                        <TextView-->
+<!--                            android:layout_width="170dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:text="Name"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="12sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:text="Location"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="10sp" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="5dp">-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+
+<!--                        android:src="@drawable/post1" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/black">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/heart_icon" />-->
+
+<!--                        <ImageView-->
+<!--                            android:visibility="gone"-->
+<!--                            android:layout_width="20dp"-->
+<!--                            android:layout_height="19dp"-->
+<!--                            android:layout_marginLeft="6dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:src="@drawable/liked_icon" />-->
+<!--                    </RelativeLayout>-->
+
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+
+<!--                        android:src="@drawable/comment_icon" />-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:src="@drawable/view_icon" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:text="680"-->
+<!--                        android:textColor="@color/white" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="right">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginRight="18dp"-->
+<!--                            android:src="@drawable/send_icon" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="27k"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="7dp"-->
+<!--                        android:text="Likes"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:text="200"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="7dp"-->
+<!--                        android:text="Comment"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="This #Christmas,give family welcome to @vijay"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="#Vijay"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Profile"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:textStyle="bold"/>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+
+
+
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:id="@+id/recyclerview"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content" />-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@color/black"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="5dp">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/image_view"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_marginLeft="13dp"-->
+<!--                        android:src="@drawable/post_profile" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/name"-->
+<!--                            android:layout_width="170dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:text="Name"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="12sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/location"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:text="Location"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="10sp" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="5dp">-->
+
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/image"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+
+<!--                        android:src="@drawable/post3" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/black">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/like"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/heart_icon" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/liked"-->
+<!--                            android:visibility="gone"-->
+<!--                            android:layout_width="20dp"-->
+<!--                            android:layout_height="19dp"-->
+<!--                            android:layout_marginLeft="6dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:src="@drawable/liked_icon" />-->
+<!--                    </RelativeLayout>-->
+
+
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/comment"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+
+<!--                        android:src="@drawable/comment_icon" />-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:src="@drawable/view_icon" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:text="680"-->
+<!--                        android:textColor="@color/white" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="right">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginRight="18dp"-->
+<!--                            android:src="@drawable/send_icon" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="27k"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="7dp"-->
+<!--                        android:text="Likes"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:text="200"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="7dp"-->
+<!--                        android:text="Comment"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="This #Christmas,give family welcome to @vijay"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="#Vijay"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="12dp" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Roll"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:textStyle="bold"/>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/recycler"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

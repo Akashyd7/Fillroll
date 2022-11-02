@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:checked="true"
+        android:icon="@drawable/home_icon_bottom"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_help"
+        android:checked="false"
+        android:icon="@drawable/search_icon_bottom"
+        android:title="Help"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_add"
+        android:checked="false"
+        android:icon="@drawable/add_icon_bottom"
+        android:title="Help"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_like"
+        android:checked="false"
+        android:icon="@drawable/roll_icon_bottom"
+        android:title="Help"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:checked="false"
+        android:icon="@drawable/explore_icon_bottom"
+        android:title="Help"
+        app:showAsAction="ifRoom" />
+
+
+
+</menu>

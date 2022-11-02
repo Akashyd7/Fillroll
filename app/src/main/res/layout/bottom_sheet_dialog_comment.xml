@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/vector_comment"/>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal">
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="30dp"
+           android:layout_height="28dp"
+           app:cardBackgroundColor="@color/gradientEnd"
+           app:cardCornerRadius="27dp">
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="27dp"
+               android:layout_height="25dp"
+               android:layout_gravity="center"
+               app:cardCornerRadius="27dp">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/story2" />
+           </androidx.cardview.widget.CardView>
+       </androidx.cardview.widget.CardView>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="8dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="joshua_l"
+               android:textSize="13sp"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/white"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="On our fintech apps in Mongolia  and Philippines,"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/white"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="we deploy 4-5 push updates that contain essential"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/white"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="bug fixes and enhancements on a weekly basis,"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/white"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="Over-the-air updates using Microsoft's App"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/white"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="Center CodePush"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/white"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="20dp"
+       android:orientation="horizontal">
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="30dp"
+           android:layout_height="28dp"
+           app:cardBackgroundColor="@color/gradientEnd"
+           app:cardCornerRadius="27dp">
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="27dp"
+               android:layout_height="25dp"
+               android:layout_gravity="center"
+               app:cardCornerRadius="27dp">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/story3" />
+           </androidx.cardview.widget.CardView>
+       </androidx.cardview.widget.CardView>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_marginLeft="8dp"
+
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="VJ12"
+               android:textSize="12sp"
+               android:textStyle="bold"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/white"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="just like super Nature"
+               android:textSize="10sp"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/white"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="8dp"
+                   android:text="12:20       reply"
+                   android:layout_marginLeft="5dp"
+                   android:textColor="@color/white"/>
+
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:gravity="right">
+
+           <ImageView
+               android:layout_width="10dp"
+               android:layout_height="10dp"
+               android:layout_gravity="center"
+               android:src="@drawable/like"/>
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="15dp"
+               android:layout_gravity="top"
+               android:layout_marginRight="10dp"
+               android:src="@drawable/ic_baseline_more_vert_24"/>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            app:cardBackgroundColor="@color/gradientEnd"
+            app:cardCornerRadius="27dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="27dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="27dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/story1" />
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Mark"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="just like super Nature"
+                android:textSize="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="12:20       reply"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/liked_icon"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_baseline_more_vert_24"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            app:cardBackgroundColor="@color/gradientEnd"
+            app:cardCornerRadius="27dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="27dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="27dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/story4" />
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Vetrovs"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="just like super Nature"
+                android:textSize="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="12:20       reply"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/like"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_baseline_more_vert_24"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            app:cardBackgroundColor="@color/gradientEnd"
+            app:cardCornerRadius="27dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="27dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="27dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/search_post1" />
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:text="Vj12"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="just like super Nature"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="12:20       reply"
+                android:textColor="@color/white"
+                android:textSize="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/like"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_baseline_more_vert_24"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            app:cardBackgroundColor="@color/gradientEnd"
+            app:cardCornerRadius="27dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="27dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="27dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/story2" />
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Asal"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="very nice photo"
+                android:textSize="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="12:20       reply"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/like"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_baseline_more_vert_24"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            app:cardBackgroundColor="@color/gradientEnd"
+            app:cardCornerRadius="27dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="27dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="27dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/search_post6" />
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Vj12"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="just like super Nature"
+                android:textSize="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="12:20       reply"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/like"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_baseline_more_vert_24"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#1A1920"
+            app:cardCornerRadius="30dp"
+            app:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/story2" />
+
+                </LinearLayout>
+
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/transparent"
+                    android:hint="Send your comments....."
+                    android:textColor="@color/white"
+                    android:textColorHint="#8DA6A5A5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/emoji"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/send_icon" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
